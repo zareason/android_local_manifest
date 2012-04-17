@@ -5,6 +5,6 @@
     <remove-project name="AOKP/vendor_amazon_otter" />
 
     <!-- local projects -->
-    <project path="device/amazon/otter" name="KFire-Android/device-amazon-otter" remote="gh" revision="ics" />
+    <project path="device/amazon/otter" name="KFire-Android/device-amazon-otter" remote="gh" revision="ics-aokp" />
 
   </manifest>
