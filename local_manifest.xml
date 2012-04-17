@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <manifest>
 
+    <remove-project name="AOKP/device_amazon_otter" />
+    <remove-project name="AOKP/vendor_amazon_otter" />
+
     <!-- local projects -->
     <project path="device/amazon/otter" name="KFire-Android/device-amazon-otter" remote="gh" revision="ics" />
 
