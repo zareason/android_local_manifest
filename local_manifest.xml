@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <manifest>
-    <!-- CM removals -->
-    <remove-project name="CyanogenMod/android_frameworks_base" />
+<manifest>
 
-    <!-- local projects -->
-    <project path="frameworks/base" name="KFire-Android/android_frameworks_base" remote="github" revision="ics" />
-    <project path="device/amazon/otter" name="KFire-Android/device-amazon-otter" remote="github" revision="ics" />
-    <project path="kernel/amazon/otter" name="KFire-Android/kernel_omap" remote="github" revision="4AI.5" />
-    <project path="vendor/amazon/otter" name="KFire-Android/android_vendor_amazon_otter" remote="github" revision="ics" />
+  <remote fetch="git://github.com/zareason/" name="zareason" />
+  <remove-project name="CyanogenMod/android_frameworks_base" />
+  <project name="android_external_cedarx" path="external/cedarx" remote="zareason" revision="master" />
+  <project name="android_hardware_realtek" path="hardware/realtek" remote="zareason" revision="ics" />
+  <project name="linux-allwinner" path="kernel/allwinner/common" remote="zareason" revision="allwinner-3.0" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="zareason" revision="allwinner" />
+  <project name="android_device_allwinner_common" path="device/allwinner/common" remote="zareason" revision="master" />
+  <project name="android_device_allwinner_zatab" path="device/allwinner/zatab" remote="zareason" revision="ics" />
 
-  </manifest>
+</manifest>
