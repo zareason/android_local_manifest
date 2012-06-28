@@ -18,3 +18,7 @@ To initialize your local repository using the CM9 manifest, use commands like th
 Then to sync up:
 
     repo sync
+
+Grab the CM prebuilts:
+    cd vendor/cm
+    ./get-prebuilts
