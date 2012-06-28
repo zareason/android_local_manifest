@@ -5,14 +5,13 @@ Getting Started
 
 Make a build directory:
 
-	mkdir android (or whatever name you choose)
-	cd android (or the name  you chose)
+	mkdir ~/android (or whatever name you choose)
+	cd ~/android (or the name  you chose)
 	
 
 To initialize your local repository using the CM9 manifest, use commands like these:
 
     repo init -u git://github.com/CyanogenMod/android.git -b ics
-    
     curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/zareason/android_local_manifest/ics/local_manifest.xml
 
 Then to sync up:
@@ -21,5 +20,17 @@ Then to sync up:
 
 Grab the CM prebuilts:
 
-    cd vendor/cm
+    cd ~/android/vendor/cm
     ./get-prebuilts
+
+Grab the proprietary files from the device:
+
+    cd ~/android/device/allwinner/zatab/
+    ./extract-files.sh
+
+Build:
+
+    cd ~/android
+    source build/envsetup.sh
+    lunch cm_zatab-userdebug
+    make bacon
