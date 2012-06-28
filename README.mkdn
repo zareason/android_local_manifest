@@ -1,26 +1,20 @@
-Local manifest addon for ICS to build for the Kindle Fire
+Local manifest addon for Android 4.0 to build for the ZaReason ZaTab
 
 Getting Started
 ---------------
 
-To get started with please see our [wiki](https://github.com/KFire-Android/android_local_manifest/wiki).
-
 Make a build directory:
 
-	mkdir Andoid (or whatever name you choose)
-	cd Android (or the name  you chose)
+	mkdir android (or whatever name you choose)
+	cd android (or the name  you chose)
 	
 
 To initialize your local repository using the CM9 manifest, use commands like these:
 
     repo init -u git://github.com/CyanogenMod/android.git -b ics
     
-    curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/KFire-Android/android_local_manifest/ics/local_manifest.xml
-
-    	( or Download: https://github.com/KFire-Android/android_local_manifest/blob/ics/local_manifest.xml
-		and place it in ~/Android/.repo/local_manifest.xml (or ~/'name you chose'/.repo)
+    curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/zareason/android_local_manifest/ics/local_manifest.xml
 
 Then to sync up:
 
     repo sync
-
