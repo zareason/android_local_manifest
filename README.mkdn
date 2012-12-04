@@ -8,6 +8,14 @@ Make a build directory:
 	mkdir ~/android (or whatever name you choose)
 	cd ~/android (or the name  you chose)
 	
+If you don't already have the "repo" tool, get it.
+
+    curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > repo
+
+Place "repo" where you can run it, and make it executable. This works if ~bin is in $PATH
+
+    cp repo ~/bin/repo
+    chmod a+x ~/bin/repo
 
 To initialize your local repository using the CM9 manifest, use commands like these:
 
