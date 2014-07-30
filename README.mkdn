@@ -20,7 +20,7 @@ Place "repo" where you can run it, and make it executable. This works if ~bin is
 To initialize your local repository using the CM9 manifest, use commands like these:
 
     repo init -u git://github.com/CyanogenMod/android.git -b ics
-    curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/zareason/android_local_manifest/ics/local_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/zatab.xml -O -L https://raw.github.com/zareason/android_local_manifest/ics/local_manifest.xml
 
 Then to sync up:
 
