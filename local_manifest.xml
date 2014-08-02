@@ -3,6 +3,7 @@
 
   <remote fetch="git://github.com/zareason/" name="zareason" />
   <remove-project name="CyanogenMod/android_frameworks_base" />
+  <remove-project name="CyanogenMod/android_bootable_recovery" />
   <project name="android_external_cedarx" path="external/cedarx" remote="zareason" revision="master" />
   <project name="android_hardware_realtek" path="hardware/realtek" remote="zareason" revision="ics" />
   <project name="linux-allwinner" path="kernel/allwinner/common" remote="zareason" revision="allwinner-3.0" />
